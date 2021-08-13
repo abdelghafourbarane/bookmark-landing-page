@@ -2,6 +2,7 @@ import SpecialButton from "../special-button/SpecialButton.component";
 
 import classes from "./Header.styles.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo-bookmark.svg";
+import { ReactComponent as MenuIcon } from "../../assets/icon-hamburger.svg";
 
 function Header() {
   return (
@@ -25,6 +26,7 @@ function Header() {
           />
         </li>
       </ul>
+      <MenuIcon className={classes.menu_icon} />
     </div>
   );
 }

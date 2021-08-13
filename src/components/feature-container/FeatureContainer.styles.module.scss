@@ -8,7 +8,6 @@
   .illustration_container {
     position: relative;
     .illustration_back {
-      height: 2rem;
       background-color: $primary-color;
       border-radius: 0 0 7rem 0;
       position: absolute;
@@ -41,7 +40,38 @@
     }
     h2 {
       font-weight: 500;
-      margin: 0 0 2rem 0;
+      // margin: 0 0 2rem 0;
+      color: $title-color;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 2rem;
+
+    .text_container {
+      text-align: center;
+      padding: 0 $pd-medium;
+    }
+
+    .illustration_container {
+      .illustration_tab {
+        height: fit-content;
+        width: fit-content;
+
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        .illustration_img {
+          height: 14rem;
+          width: auto;
+        }
+      }
+
+      .illustration_back {
+        height: 10rem;
+      }
     }
   }
 }

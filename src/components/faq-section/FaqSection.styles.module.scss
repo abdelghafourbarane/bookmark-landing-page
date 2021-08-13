@@ -27,8 +27,10 @@
       justify-content: space-between;
       border-top: solid 1px hsl(0, 0%, 80%);
       align-items: center;
+      text-align: left;
       padding: 1rem 0;
       font-size: $text-font-size;
+
       &:last-child {
         border-bottom: solid 1px hsl(0, 0%, 80%);
       }
@@ -41,6 +43,18 @@
       span {
         color: $title-color;
         font-weight: 500;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0 $pd-medium;
+
+    ul {
+      li {
+        span {
+          font-size: 0.8rem;
+        }
       }
     }
   }

@@ -8,7 +8,11 @@ function FeatureContainer({ title, description, illustUrl }) {
       <div className={classes.illustration_container}>
         <div className={classes.illustration_back}></div>
         <div className={classes.illustration_tab}>
-          <img src={illustUrl} alt={title} />
+          <img
+            src={illustUrl}
+            alt={title}
+            className={classes.illustration_img}
+          />
         </div>
       </div>
       <div className={classes.text_container}>

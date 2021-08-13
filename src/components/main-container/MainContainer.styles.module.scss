@@ -51,4 +51,36 @@
       margin-right: 2rem;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    padding: unset;
+    gap: 4rem;
+    .text_container {
+      text-align: center;
+      padding: 0 $pd-medium;
+      gap: 1rem;
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .btn_group {
+        justify-content: center;
+      }
+    }
+
+    .illustration_container {
+      .tab_illustration {
+        margin-right: unset;
+        .tab_img {
+          width: 90vw;
+          height: auto;
+        }
+      }
+
+      .back_tab_illustration {
+        height: 10rem;
+      }
+    }
+  }
 }

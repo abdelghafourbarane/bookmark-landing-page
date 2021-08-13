@@ -37,4 +37,23 @@
       fill: hsl(0, 0, 98%);
     }
   }
+
+  @media screen and (max-width: 600px) {
+    padding: 2rem $pd-medium;
+    flex-direction: column;
+    gap: 2rem;
+
+    .brand_container {
+      flex-direction: column;
+      gap: 1.5rem;
+      ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: unset;
+        li {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }

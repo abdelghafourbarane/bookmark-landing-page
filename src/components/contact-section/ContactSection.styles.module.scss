@@ -38,4 +38,26 @@
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    padding: 4rem $pd-medium;
+
+    .title_container {
+      padding: unset;
+    }
+
+    .input_container {
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        width: unset;
+        padding: 0.7rem 0.5rem;
+
+        &::placeholder {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
 }

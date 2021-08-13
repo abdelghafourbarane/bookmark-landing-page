@@ -1,5 +1,5 @@
 import SpecialButton from "../special-button/SpecialButton.component";
-import { ReactComponent as TabIllustration } from "../../assets/illustration-hero.svg";
+// import { ReactComponent as TabIllustration } from "../../assets/illustration-hero.svg";
 
 import classes from "./MainContainer.styles.module.scss";
 
@@ -27,7 +27,11 @@ function MainContainer() {
       </div>
       <div className={classes.illustration_container}>
         <div className={classes.tab_illustration}>
-          <TabIllustration />
+          <img
+            src="assets/illustration-hero.svg"
+            alt="illustration hero"
+            className={classes.tab_img}
+          />
         </div>
         <div className={classes.back_tab_illustration}></div>
       </div>
