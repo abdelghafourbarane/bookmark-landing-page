@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.footer {
+  background-color: $title-color;
+  padding: 1rem $pd-desktop;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    fill: hsl(0, 0, 98%);
+  }
+  .brand_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 2rem;
+
+      color: hsl(0, 0, 85%);
+      li {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .socials_container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .social_icon {
+      fill: hsl(0, 0, 98%);
+    }
+  }
+}

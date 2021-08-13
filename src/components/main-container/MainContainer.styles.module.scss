@@ -1,0 +1,54 @@
+@import "../../global.scss";
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: $pd-desktop;
+
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    padding: 5rem 5rem 5rem 0;
+
+    h1 {
+      font-size: $h1-size;
+      color: $title-color;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      color: $text-color;
+      line-height: $text-line-height;
+      font-size: $text-font-size;
+    }
+
+    .btn_group {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
+  .illustration_container {
+    position: relative;
+    .back_tab_illustration {
+      position: absolute;
+      background-color: $primary-color;
+      height: 20rem;
+      border-radius: 0 0 0 10rem;
+      bottom: 0rem;
+      right: 0rem;
+
+      z-index: -1;
+      width: 75%;
+    }
+
+    .tab_illustration {
+      margin-right: 2rem;
+    }
+  }
+}

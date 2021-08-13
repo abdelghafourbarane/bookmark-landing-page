@@ -1,0 +1,30 @@
+@import "../../global.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem $pd-desktop;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+
+  .logo {
+    fill: $title-color;
+  }
+  .sections_list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: auto;
+      a {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+  }
+}

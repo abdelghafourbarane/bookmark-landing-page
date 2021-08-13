@@ -1,0 +1,29 @@
+@import "../../global.scss";
+
+.download_card {
+  box-shadow: 0 1rem 1rem rgba(31, 47, 86, 0.1);
+  width: fit-content;
+  border-radius: 0.5rem;
+  .logo_container {
+    padding: 2rem;
+
+    h4 {
+      font-weight: 500;
+      color: $title-color;
+      margin-bottom: auto;
+    }
+    p {
+      font-size: $text-font-size;
+      color: $text-color;
+    }
+  }
+
+  .bg_container {
+    background-image: url("../../assets/bg-dots.svg");
+    height: 0.25rem;
+  }
+
+  .btn_container {
+    padding: 1.5rem;
+  }
+}

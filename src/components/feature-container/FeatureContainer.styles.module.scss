@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.feature_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 7rem;
+  .illustration_container {
+    position: relative;
+    .illustration_back {
+      height: 2rem;
+      background-color: $primary-color;
+      border-radius: 0 0 7rem 0;
+      position: absolute;
+      bottom: 0rem;
+      left: 0rem;
+      height: 18rem;
+      width: 90%;
+      z-index: -1;
+    }
+
+    .illustration_tab {
+      float: right;
+      // margin-bottom: 3rem;
+      margin-top: 2rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      z-index: 1;
+      height: 25rem;
+    }
+  }
+
+  .text_container {
+    text-align: left;
+    padding-right: 14rem;
+    p {
+      color: $text-color;
+      font-size: $text-font-size;
+      line-height: $text-line-height;
+      margin: 0 0 2rem 0;
+    }
+    h2 {
+      font-weight: 500;
+      margin: 0 0 2rem 0;
+    }
+  }
+}

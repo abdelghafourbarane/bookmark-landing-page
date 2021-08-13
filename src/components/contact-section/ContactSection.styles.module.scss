@@ -1,0 +1,41 @@
+@import "../../global.scss";
+
+.contact_section {
+  background-color: $primary-color;
+  padding: 4rem 28.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  span {
+    font-size: 0.6rem;
+    letter-spacing: 0.3rem;
+    color: hsl(231, 30%, 85%);
+    font-weight: 500;
+  }
+  .title_container {
+    padding: 0 2rem;
+    h2 {
+      font-weight: 500;
+      color: hsl(231, 30%, 96%);
+    }
+  }
+
+  .input_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    input {
+      width: 65%;
+      border-radius: 0.3rem;
+      font-family: "Rubik", sans-serif;
+      border: none;
+
+      &::placeholder {
+        color: hsl(0, 0, 80%);
+        padding: 0 0.5rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.faq_section {
+  padding: 0 28.5rem;
+  margin-bottom: 10rem;
+
+  h3 {
+    color: $title-color;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: $text-font-size;
+    line-height: $text-line-height;
+    color: $text-color;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: solid 1px hsl(0, 0%, 80%);
+      align-items: center;
+      padding: 1rem 0;
+      font-size: $text-font-size;
+      &:last-child {
+        border-bottom: solid 1px hsl(0, 0%, 80%);
+      }
+
+      .arrow_icon {
+        width: 0.9rem;
+        height: auto;
+      }
+
+      span {
+        color: $title-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
