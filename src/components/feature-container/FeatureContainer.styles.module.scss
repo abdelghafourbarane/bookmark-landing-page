@@ -31,7 +31,7 @@
 
   .text_container {
     text-align: left;
-    padding-right: 14rem;
+    padding: 0 14rem 0 0;
     p {
       color: $text-color;
       font-size: $text-font-size;
@@ -62,15 +62,18 @@
         width: fit-content;
 
         margin-bottom: 1rem;
-        margin-right: 1rem;
+        margin-right: $pd-medium;
+        // margin: auto;
+
         .illustration_img {
-          height: 14rem;
+          height: 13rem;
           width: auto;
         }
       }
 
       .illustration_back {
         height: 10rem;
+        width: 70%;
       }
     }
   }

@@ -4,9 +4,13 @@ import classes from "./Header.styles.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo-bookmark.svg";
 import { ReactComponent as MenuIcon } from "../../assets/icon-hamburger.svg";
 
-function Header() {
+function Header({ clickMenu, showModal }) {
   return (
-    <div className={classes.header}>
+    <div
+      className={classes.header}
+      // style={{ visibility: `{${showModal ? "hidden" : "visible"}}` }}
+      style={showModal ? { visibility: "hidden" } : { visibility: "visible" }}
+    >
       <Logo className={classes.logo} />
       <ul className={classes.sections_list}>
         <li>
@@ -26,7 +30,7 @@ function Header() {
           />
         </li>
       </ul>
-      <MenuIcon className={classes.menu_icon} />
+      <MenuIcon className={classes.menu_icon} onClick={() => clickMenu()} />
     </div>
   );
 }

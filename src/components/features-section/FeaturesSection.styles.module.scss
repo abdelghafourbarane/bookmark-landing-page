@@ -39,8 +39,33 @@
     }
 
     .features_list_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: unset;
       .features_list_item {
         width: 100%;
+        position: relative;
+
+        border-top: solid 1px hsl(0, 0%, 85%);
+
+        &:last-child {
+          border-bottom: solid 1px hsl(0, 0%, 85%);
+        }
+      }
+
+      .feature_active {
+        border-bottom: unset;
+        // border-bottom: unset;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 30%;
+          bottom: 0;
+          // height: 1px;
+          width: 40%; /* or 100px */
+          border-bottom: 3px solid $secondary-color;
+        }
       }
     }
   }
