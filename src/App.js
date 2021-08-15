@@ -16,7 +16,7 @@ function App() {
   const onMenuClick = () => {
     setMenuClicked(!menuClicked);
   };
-  console.log(menuClicked);
+
   return (
     <div className="App">
       {menuClicked && <Modal clickMenu={() => onMenuClick()} />}

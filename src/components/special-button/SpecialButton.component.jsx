@@ -1,7 +1,6 @@
 import classes from "./SpecialButton.styles.module.scss";
 
 function SpecialButton({ content, primary, secondary, silver }) {
-  console.log(primary);
   return (
     <button
       className={`${classes.btn} ${primary ? classes.btn_primary : ""} ${

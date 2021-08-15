@@ -40,8 +40,8 @@ function FaqSection() {
       </p>
       <ul>
         {FAQLIST.map((faq_item) => (
-          <li>
-            <FaqElement key={faq_item.id} {...faq_item} />
+          <li key={faq_item.id}>
+            <FaqElement {...faq_item} />
           </li>
         ))}
       </ul>

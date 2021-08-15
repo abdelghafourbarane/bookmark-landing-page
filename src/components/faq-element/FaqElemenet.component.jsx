@@ -19,7 +19,6 @@ function FaqElement({ title, description }) {
           }`}
         >
           <ArrowIcon
-            className={classes.svg_example}
             className={`${classes.arrow_icon} ${
               arrowClicked && classes.arrow_clicked
             }`}
