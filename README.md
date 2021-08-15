@@ -32,10 +32,17 @@ Users should be able to:
 * Desktop version (width : 1440px)
 ![Desktop version](./screenshots/desktop_version.png)
 
+
+
 * Mobile version(1) (width : 375px)
+
 ![Mobile version](./screenshots/mobile_version_1.png)
 
+
+
+
 * Mobile version(2) (width : 375px)
+
 ![Mobile version](./screenshots/mobile_version_2.png)
 
 ### Links
