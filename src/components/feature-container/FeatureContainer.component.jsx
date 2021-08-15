@@ -18,11 +18,7 @@ function FeatureContainer({ title, description, illustUrl }) {
       <div className={classes.text_container}>
         <h2>{title}</h2>
         <p>{description}</p>
-        <SpecialButton
-          content="More info"
-          fontColor="hsl(0,0%,98%)"
-          backColor="hsl(231, 69%, 60%)"
-        />
+        <SpecialButton content="More info" primary />
       </div>
     </div>
   );

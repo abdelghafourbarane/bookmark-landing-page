@@ -15,7 +15,7 @@
   .sections_list {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3.5rem;
     list-style: none;
     padding: 0;
 
@@ -24,6 +24,9 @@
       a {
         text-decoration: none;
         color: unset;
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
   }

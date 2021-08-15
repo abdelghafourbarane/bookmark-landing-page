@@ -1,10 +1,12 @@
 import classes from "./SpecialButton.styles.module.scss";
 
-function SpecialButton({ content, fontColor, backColor }) {
+function SpecialButton({ content, primary, secondary, silver }) {
+  console.log(primary);
   return (
     <button
-      className={classes.special_button}
-      style={{ color: `${fontColor}`, backgroundColor: `${backColor}` }}
+      className={`${classes.btn} ${primary ? classes.btn_primary : ""} ${
+        secondary && classes.btn_secondary
+      } ${silver && classes.btn_silver}`}
     >
       {content}
     </button>

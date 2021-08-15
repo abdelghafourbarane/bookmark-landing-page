@@ -12,11 +12,7 @@ function DownloadCard({ title, description, logoUrl }) {
       {/* <img src="assets/bg-dots.svg" /> */}
       <div className={classes.bg_container}></div>
       <div className={classes.btn_container}>
-        <SpecialButton
-          content="Add & Install Extension"
-          fontColor="hsl(0,0%,98%)"
-          backColor="hsl(231, 69%, 60%)"
-        />
+        <SpecialButton content="Add & Install Extension" primary />
       </div>
     </div>
   );

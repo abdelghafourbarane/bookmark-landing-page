@@ -10,11 +10,7 @@ function ContactSection() {
       </div>
       <div className={classes.input_container}>
         <input type="text" placeholder="Enter your email address" />
-        <SpecialButton
-          content="Contact Us"
-          fontColor="hsl(0,0%,98%)"
-          backColor="hsl(0, 94%, 66%)"
-        />
+        <SpecialButton content="Contact Us" secondary />
       </div>
     </section>
   );

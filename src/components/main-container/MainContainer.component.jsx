@@ -13,16 +13,8 @@ function MainContainer() {
           a new browser tab and see your sites load instantly. Try for free
         </p>
         <div className={classes.btn_group}>
-          <SpecialButton
-            fontColor="hsl(0,0%,98%)"
-            backColor="hsl(231, 69%, 60%)"
-            content="Get it on Chrome"
-          />
-          <SpecialButton
-            fontColor="hsl(229, 31%, 21%)"
-            backColor="hsl(229,30%,97%)"
-            content="Get it on Firefox"
-          />
+          <SpecialButton primary content="Get it on Chrome" />
+          <SpecialButton silver content="Get it on Firefox" />
         </div>
       </div>
       <div className={classes.illustration_container}>

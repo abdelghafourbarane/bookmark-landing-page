@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.faq_element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+
+  .faq_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    font-size: $text-font-size;
+    &:hover {
+      .title {
+        color: $secondary-color;
+      }
+    }
+    .arrow_icon {
+      transform: scale(0.8);
+      cursor: pointer;
+      stroke: $primary-color;
+    }
+    .arrow_container {
+      transition: 0.4s;
+    }
+    .arrow_container_active {
+      transform: rotate(-180deg);
+    }
+    .arrow_clicked {
+      stroke: $secondary-color;
+    }
+
+    .title {
+      color: $title-color;
+      font-weight: 500;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .description {
+    color: $text-color;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}

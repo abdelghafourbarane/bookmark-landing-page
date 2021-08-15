@@ -23,11 +23,7 @@ function Header({ clickMenu, showModal }) {
           <a href="#contact">CONTACT</a>
         </li>
         <li>
-          <SpecialButton
-            content="LOGIN"
-            backColor="hsl(0, 94%, 66%)"
-            fontColor="hsl(0,0%,98%)"
-          />
+          <SpecialButton content="LOGIN" secondary />
         </li>
       </ul>
       <MenuIcon className={classes.menu_icon} onClick={() => clickMenu()} />
